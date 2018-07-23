@@ -1,0 +1,15 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "the_end": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "dimension": "the_end"
+            }
+        }
+    },
+    "rewards": {
+        "function": "temperature:the_end"
+    },
+    "parent": "biomes:root"
+}

@@ -1,0 +1,15 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "biome": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "badlands_plateau"
+            }
+        }
+	},
+	"rewards": {
+        "function": "temperature:dry"
+    },
+    "parent": "biomes:root"
+}
