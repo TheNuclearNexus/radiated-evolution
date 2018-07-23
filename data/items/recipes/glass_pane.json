@@ -1,0 +1,9 @@
+﻿{
+    "type": "smelting",
+    "ingredient": {
+        "item": "minecraft:sand"
+    },
+    "result": "minecraft:glass_pane",
+    "experience": 0,
+    "cookingtime": 400
+}

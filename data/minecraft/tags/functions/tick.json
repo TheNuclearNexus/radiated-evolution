@@ -1,0 +1,12 @@
+{
+	"values":[
+		"crafting:main",
+		"blocks:main",
+		"items:main",
+		"temperature:main",
+		"setup:new_player",
+		"water:main",
+		"multiplayer_beds:main",
+		"worldgen:ore_scan"
+	]
+}

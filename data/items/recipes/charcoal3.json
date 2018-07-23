@@ -1,0 +1,9 @@
+{
+    "type": "smelting",
+    "ingredient": {
+        "item": "minecraft:birch_log"
+    },
+    "result": "minecraft:charcoal",
+    "experience": 0.1,
+    "cookingtime": 200
+}
