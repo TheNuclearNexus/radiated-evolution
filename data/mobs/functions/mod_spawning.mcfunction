@@ -1,0 +1,6 @@
+#Spawning
+execute at @e[type=zombie] positioned ~ 0 ~ as @e[distance=..45,type=zombie,scores={RE_MobRandom=0..15},sort=nearest] unless entity @e[tag=RE_caveman,distance=..256] run tag @s add RE_cm_spawn
+execute at @e[tag=RE_cm_spawn] run summon villager ~ ~ ~ {PersistenceRequired:1b,Silent:1b,CustomNameVisible:0b,Team:"RE_caveman",Profession:0,Career:1,CareerLevel:3000,Willing:1b,Age:2,Tags:["RE_caveman"],CustomName:"{\"text\":\"Caveman\"}",Offers:{Recipes:[{rewardExp:0b,maxUses:2147483647,uses:0,buy:{id:"minecraft:beef",Count:1b},sell:{id:"minecraft:tall_grass",Count:3b,tag:{gm:2,display:{Name:"{\"text\":\"Plant Fiber\",\"color\":\"white\",\"italic\":false}"}}}},{rewardExp:0b,maxUses:2147483647,uses:0,buy:{id:"minecraft:porkchop",Count:1b},sell:{id:"minecraft:tall_grass",Count:3b,tag:{gm:2,display:{Name:"{\"text\":\"Plant Fiber\",\"color\":\"white\",\"italic\":false}"}}}},{rewardExp:0b,maxUses:2147483647,uses:0,buy:{id:"minecraft:leather",Count:1b,tag:{display:{Name:"{\"text\":\"Tanned Hide\",\"color\":\"white\",\"italic\":false}"}}},sell:{id:"minecraft:bone",Count:2b}}]}}
+execute at @e[tag=RE_cm_spawn] run summon armor_stand ~ ~ ~ {Marker:1b,NoGravity:1b,Invisible:1b,Tags:["RE_cavestand"],ArmorItems:[{},{},{},{id:"minecraft:stone_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:53}}]}
+execute as @e[tag=RE_cm_spawn] at @s run tp ~ ~-256 ~
+

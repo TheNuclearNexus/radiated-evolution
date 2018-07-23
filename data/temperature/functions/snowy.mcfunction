@@ -1,0 +1,19 @@
+scoreboard players set @s RE_biomeType 1
+advancement revoke @s only biomes:iceflats
+advancement revoke @s only biomes:iceflats_spikes
+advancement revoke @s only biomes:cold_beach
+advancement revoke @s only biomes:cold_tiaga
+advancement revoke @s only biomes:cold_tiaga_m
+advancement revoke @s only biomes:frozen_river
+advancement revoke @s only biomes:extreme_hills
+advancement revoke @s only biomes:extreme_hills_m
+advancement revoke @s only biomes:extreme_hills_plus
+advancement revoke @s only biomes:extreme_hills_m_plus
+advancement revoke @s only biomes:tiaga
+advancement revoke @s only biomes:tiaga_m
+advancement revoke @s only biomes:mega_tiaga
+advancement revoke @s only biomes:mega_tiaga_m
+advancement revoke @s only biomes:stone_beach
+advancement revoke @s only biomes:cold_ocean
+advancement revoke @s only biomes:frozen_deep_ocean
+advancement revoke @s only biomes:cold_deep_ocean
