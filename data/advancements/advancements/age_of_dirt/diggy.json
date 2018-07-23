@@ -1,0 +1,32 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": "Diggy Diggy Hole",
+        "description": "Craft a [Flint Trowel]",
+        "icon": {
+            "item": "minecraft:iron_shovel"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "trowel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "wooden_shovel",
+                        "nbt": "{Unbreakable: 1b, HideFlags: 4, display: {Name: \"{\\\"text\\\":\\\"Flint Trowel\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\"}, Damage: 1, AttributeModifiers: [{UUIDMost: 142922, UUIDLeast: 393378, Amount: 2, Slot: \"mainhand\", AttributeName: \"generic.attackDamage\", Operation: 0, Name: \"generic.attackDamage\"}]}",
+                        "count": {
+                            "min": 1,
+                            "max": 1
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "advancements:age_of_dirt/crafting_time"
+}

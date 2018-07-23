@@ -1,0 +1,28 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": "Sticks and Stones",
+        "description": "Get a [Crafting Rock] from digging up gravel with your trowel",
+        "icon": {
+            "item": "minecraft:stone"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "diamond_hoe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "diamond_hoe",
+                        "nbt": "{Unbreakable:1b,Damage:8,gm:2,display: {Name: \"{\\\"text\\\":\\\"Crafting Rock\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\"}}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "advancements:age_of_dirt/diggy"
+}

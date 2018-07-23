@@ -1,0 +1,32 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": "Back stabber!",
+        "description": "Craft a [Flint Knife]",
+        "icon": {
+            "item": "minecraft:iron_sword"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "knife": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "wooden_sword",
+                        "nbt": "{Unbreakable: 1b, HideFlags: 4, display: {Name: \"{\\\"text\\\":\\\"Flint Knife\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\"}, Damage: 1, AttributeModifiers: [{UUIDMost: 142922, UUIDLeast: 393378, Amount: 3, Slot: \"mainhand\", AttributeName: \"generic.attackDamage\", Operation: 0, Name: \"generic.attackDamage\"}]}",
+                        "count": {
+                            "min": 1,
+                            "max": 1
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "advancements:age_of_dirt/crafting_time"
+}

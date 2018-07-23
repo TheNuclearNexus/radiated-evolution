@@ -1,0 +1,28 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": "Mining away in this minecraft day!",
+        "description": "Craft a [Bone Pickaxe]",
+        "icon": {
+            "item": "minecraft:iron_pickaxe"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "pickaxe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "wooden_pickaxe",
+                        "nbt": "{Unbreakable: 1b, HideFlags: 4, display: {Name: \"{\\\"text\\\":\\\"Bone Pickaxe\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\"}, Damage: 1, AttributeModifiers: [{UUIDMost: 696538, UUIDLeast: 607922, Amount: 2, Slot: \"mainhand\", AttributeName: \"generic.attackDamage\", Operation: 0, Name: \"generic.attackDamage\"}]}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "advancements:age_of_dirt/tan_hide"
+}

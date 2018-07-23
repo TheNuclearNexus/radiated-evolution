@@ -1,0 +1,32 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": "Almost got wood",
+        "description": "Throw 1 [Stick], 1 [Plant Fiber], and 1 [Flint] on the ground to craft a [Flint Axe]",
+        "icon": {
+            "item": "minecraft:wooden_axe"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "flint_axe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "wooden_axe",
+                        "nbt": "{display:{Name:\"{\\\"text\\\":\\\"Flint Axe\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\"},HideFlags:4,Unbreakable:1b,Damage:1,AttributeModifiers:[{AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:3,Operation:0,UUIDLeast:868299,UUIDMost:541069,Slot:\"mainhand\"},{AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\",Amount:0.8,Operation:0,UUIDLeast:624066,UUIDMost:597477,Slot:\"mainhand\"}]}",
+                        "count": {
+                            "min": 1,
+                            "max": 1
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "advancements:age_of_dirt/getting_dirty"
+}

@@ -1,0 +1,32 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": "Who is on the chopping block?",
+        "description": "Drop your [Flint Axe] and a [Log] on the ground to get a [Chopping Block]",
+        "icon": {
+            "item": "minecraft:iron_axe"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "oak_cb": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "diamond_hoe",
+                        "nbt": "{display:{Name:\"{\\\"text\\\":\\\"Oak Chopping Block\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\"},Unbreakable:1b,Damage:1,gm:2,HideFlags:6}",
+                        "count": {
+                            "min": 1,
+                            "max": 1
+                        }
+                    }
+                ]
+            }
+        }
+    },
+	"parent": "advancements:age_of_dirt/got_wood"
+}

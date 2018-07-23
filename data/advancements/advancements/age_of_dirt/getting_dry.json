@@ -1,0 +1,32 @@
+#{
+#    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+#    "display": {
+#        "title": "Time to get crafting",
+#        "description": "Drop one piece of [Flint] and a [Log] on the ground to get a [Work Log]",
+#        "icon": {
+#            "item": "minecraft:iron_sword"
+#        },
+#        "frame": "task",
+#        "show_toast": true,
+#        "announce_to_chat": true,
+#        "hidden": false
+#    },
+#    "criteria": {
+#        "work_log": {
+#            "trigger": "minecraft:inventory_changed",
+#            "conditions": {
+#                "items": [
+#                    {
+#                        "item": "wooden_sword",
+#                        "nbt": "{display:{Name:\"{\\\"text\\\":\\\"Work Log\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\"},Unbreakable:1b,Damage:1,HideFlags:4}",
+#                        "count": {
+#                            "min": 1,
+#                            "max": 1
+#                        }
+#                    }
+#                ]
+#            }
+#        }
+#    },
+#	"parent": "advancements:age_of_dirt/got_wood"
+#}

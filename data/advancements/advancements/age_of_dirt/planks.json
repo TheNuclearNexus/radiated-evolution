@@ -1,0 +1,31 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": "Don't stub your toe",
+        "description": "Drop 1 [Oak Log] onto your [Chopping Block] and then drop your [Axe]",
+        "icon": {
+            "item": "minecraft:oak_planks"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "planks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "oak_planks",
+                        "count": {
+                            "min": 2,
+                            "max": 2
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "advancements:age_of_dirt/chop"
+}
