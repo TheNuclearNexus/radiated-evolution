@@ -1,0 +1,3 @@
+execute as @e[tag=RE_grinder] at @s if block ~ ~ ~ air run give @p[gamemode=!creative] stone_pickaxe{Damage:40,Unbreakable:1b,gm:2,du_click_detect:1b,du_block_id:2516,display: {Name: "{\"text\":\"Grinder\",\"color\":\"white\",\"italic\":false}"},HideFlags:7}
+execute as @e[tag=RE_grinder] at @s if block ~ ~ ~ air run kill @e[type=item,nbt={Item:{id:"minecraft:stone_pickaxe",tag:{Damage:43}}}]
+execute as @e[tag=RE_grinder] at @s if block ~ ~ ~ air run kill @s

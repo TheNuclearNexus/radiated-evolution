@@ -1,0 +1,1 @@
+execute as @e[tag=RE_gm] at @s if block ~ ~ ~ air run kill @s

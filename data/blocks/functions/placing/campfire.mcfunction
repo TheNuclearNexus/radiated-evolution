@@ -1,0 +1,1 @@
+execute at @e[scores={du_data=251}] align xyz run summon armor_stand ~0.5 ~ ~0.5 {Tags:["RE_cf"],Marker:1b,Invisible:1b,NoGravity:1b,ArmorItems:[{},{},{},{id:"minecraft:stone_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:14}}]}

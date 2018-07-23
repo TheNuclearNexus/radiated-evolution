@@ -1,0 +1,21 @@
+
+execute at @e[tag=RE_ras_bush,tag=!RE_grown] if block ~ ~ ~ air run give @p[distance=..5,gamemode=!creative] player_head{display:{Name:"{\"text\":\"Raspberry Bush\",\"color\":\"white\",\"italic\":false}"},SkullOwner:{Id:"f2b51804-4bb6-4a0d-98a4-d52c8363ed25",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODJmNzNhZTAyZGJkYmNhNzhmZmZmNTIzNTA5NWVlN2Y4NzZlYWE1YTNjOGNkNWJlZDI1N2M0YWNjNTZmMTM2OCJ9fX0="}]}}} 1
+execute as @e[tag=RE_ras_bush,tag=!RE_grown] at @s if block ~ ~ ~ air run kill @s
+execute as @e[tag=RE_ras_bush,tag=!RE_grown] run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:stone_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:57}}]}
+
+execute as @e[tag=RE_ras_grown] at @s unless entity @a[distance=..5,scores={RE_damage=1..}] run data merge entity @s {HurtByTimestamp:-1}
+execute at @e[tag=RE_grown,tag=RE_ras_bush] if block ~ ~ ~ oak_leaves run setblock ~ ~ ~ air
+execute at @e[tag=RE_grown,tag=RE_ras_bush] unless entity @e[tag=RE_ras_grown,type=shulker,distance=..0.3] align xyz run summon shulker ~.5 ~ ~.5 {HurtByTimestamp:-1,NoGravity:1b,Silent:1b,PersistenceRequired:1b,NoAI:1b,AttachFace:1b,Tags:["RE_ras_grown"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980,ShowParticles:0b}]}
+execute as @e[tag=RE_grown,tag=RE_ras_bush] run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:stone_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:56}}]}
+execute as @e[tag=RE_ras_grown] unless entity @s[nbt={HurtByTimestamp:-1}] run give @p[scores={RE_damage=1..}] minecraft:player_head{gm:2,display:{Name:"{\"text\":\"Raspberry\",\"color\":\"white\",\"italic\":false}"},SkullOwner:{Id:"1508fef4-f03b-483c-9c61-94efbeae203c",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjEyZWYxYjQ4NmU5N2U0Y2IxMjRhYTc2MjlhY2ViOTFlZGM1MWQ2MzMzOGM5MWEwMTI4ODU0OTNjNWQ5YyJ9fX0="}]}}} 1
+execute as @e[tag=RE_ras_grown] at @s unless entity @s[nbt={HurtByTimestamp:-1}] run tag @e[tag=RE_ras_bush,tag=RE_grown,distance=..0.3] remove RE_grown
+execute as @e[tag=RE_ras_grown] at @s unless entity @s[nbt={HurtByTimestamp:-1}] run setblock ~ ~ ~ oak_leaves[persistent=true]
+execute as @e[tag=RE_ras_grown] at @s unless entity @s[nbt={HurtByTimestamp:-1}] run tp @s ~ ~-256 ~
+
+execute at @e[tag=RE_ras_bush,tag=!RE_grown] unless block ~ ~-1 ~ grass_block unless block ~ ~-1 ~ dirt unless block ~ ~-1 ~ oak_leaves positioned ~ ~-1 ~ unless entity @e[type=shulker,distance=..0.3] positioned ~ ~1 ~ run give @p[distance=..5,gamemode=!creative] player_head{display:{Name:"{\"text\":\"Raspberry Bush\",\"color\":\"white\",\"italic\":false}"},SkullOwner:{Id:"f2b51804-4bb6-4a0d-98a4-d52c8363ed25",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODJmNzNhZTAyZGJkYmNhNzhmZmZmNTIzNTA5NWVlN2Y4NzZlYWE1YTNjOGNkNWJlZDI1N2M0YWNjNTZmMTM2OCJ9fX0="}]}}} 1
+execute as @e[tag=RE_ras_bush,tag=!RE_grown] at @s unless block ~ ~-1 ~ grass_block unless block ~ ~-1 ~ dirt unless block ~ ~-1 ~ oak_leaves positioned ~ ~-1 ~ unless entity @e[type=shulker,distance=..0.3] positioned ~ ~1 ~ run setblock ~ ~ ~ air destroy
+execute as @e[tag=RE_ras_bush,tag=!RE_grown] at @s unless block ~ ~-1 ~ grass_block unless block ~ ~-1 ~ dirt unless block ~ ~-1 ~ oak_leaves positioned ~ ~-1 ~ unless entity @e[type=shulker,distance=..0.3] run kill @s
+
+execute as @a[nbt={Inventory:[{Slot:103b,id:"minecraft:player_head",tag:{SkullOwner:{Id:"f2b51804-4bb6-4a0d-98a4-d52c8363ed25"}}}]}] run give @s player_head{display:{Name:"{\"text\":\"Raspberry Bush\",\"color\":\"white\",\"italic\":false}"},SkullOwner:{Id:"f2b51804-4bb6-4a0d-98a4-d52c8363ed25",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODJmNzNhZTAyZGJkYmNhNzhmZmZmNTIzNTA5NWVlN2Y4NzZlYWE1YTNjOGNkNWJlZDI1N2M0YWNjNTZmMTM2OCJ9fX0="}]}}} 1
+execute as @a[nbt={Inventory:[{Slot:103b,id:"minecraft:player_head",tag:{SkullOwner:{Id:"f2b51804-4bb6-4a0d-98a4-d52c8363ed25"}}}]}] run replaceitem entity @s armor.head air
+execute at @e[tag=RE_ras_bush] run scoreboard players reset @a[scores={RE_damage=1..},distance=..10] RE_damage

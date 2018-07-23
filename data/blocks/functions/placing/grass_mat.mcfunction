@@ -1,0 +1,3 @@
+execute at @e[scores={du_data=2511}] align xyz run setblock ~ ~ ~ green_bed[part=head] keep
+execute at @e[scores={du_data=2511}] if block ~ ~ ~ green_bed[part=head] align xyz run summon armor_stand ~.5 ~ ~.5 {NoGravity:1b,Marker:1b,Invisible:1b,Tags:["RE_gm"],ArmorItems:[{},{},{},{id:"minecraft:stone_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:16}}]}
+execute as @e[scores={du_data=2511}] run kill @s

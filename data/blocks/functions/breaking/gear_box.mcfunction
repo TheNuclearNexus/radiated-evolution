@@ -1,0 +1,3 @@
+execute as @e[tag=RE_gear_box] at @s if block ~ ~ ~ air run give @p[gamemode=!creative] stone_pickaxe{Damage:35,Unbreakable:1b,gm:2,du_click_detect:1b,du_block_id:2514,display: {Name: "{\"text\":\"Gear Box\",\"color\":\"white\",\"italic\":false}"},HideFlags:7}
+execute as @e[tag=RE_gear_box] at @s if block ~ ~ ~ air run clear @a[scores={RE_breakOakPlank=1..},distance=..5] oak_planks 1
+execute as @e[tag=RE_gear_box] at @s if block ~ ~ ~ air run kill @s
