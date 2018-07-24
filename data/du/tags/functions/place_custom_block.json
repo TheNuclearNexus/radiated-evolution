@@ -1,0 +1,10 @@
+{
+	"values":[
+		"blocks:placing/chopping_blocks",
+		"blocks:placing/stencil_table",
+		"blocks:placing/raspberry_bush",
+		"blocks:placing/primal_crate",
+		"blocks:placing/drying_rack",
+		"blocks:placing/work_log"
+	]
+}

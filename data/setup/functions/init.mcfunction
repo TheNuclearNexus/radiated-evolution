@@ -116,4 +116,4 @@ gamerule logAdminCommands false
 gamerule commandBlockOutput false 
 gamerule doTileDrops false 
 team add RE_caveman
-team modify RE_caveman friendlyfire false
+team modify RE_caveman friendlyFire false

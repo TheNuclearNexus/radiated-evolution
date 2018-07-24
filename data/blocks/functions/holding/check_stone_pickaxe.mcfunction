@@ -1,2 +1,0 @@
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:stone_pickaxe"}}] run function blocks:holding/iron_level_pickaxe
-execute if entity @s[tag=!RE_pick] run function blocks:holding/check_iron_pickaxe
