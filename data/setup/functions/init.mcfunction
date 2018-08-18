@@ -1,4 +1,5 @@
 datapack disable vanilla
+scoreboard objectives add RE_temp dummy
 scoreboard objectives add RE_blockDropRand dummy
 scoreboard objectives add RE_breakGrass minecraft.mined:minecraft.grass
 scoreboard objectives add RE_breakGrassBlk minecraft.mined:minecraft.grass_block
