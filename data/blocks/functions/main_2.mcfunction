@@ -5,7 +5,6 @@ function blocks:facing
 function blocks:randomizer
 function blocks:holding/run
 function blocks:mode
-function blocks:breaking/blocks
+execute at @s run function blocks:block_detect
 
-scoreboard players reset @s drop
 #raspberry_bush growth

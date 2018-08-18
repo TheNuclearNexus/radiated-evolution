@@ -7,7 +7,7 @@ execute as @s[scores={RE_breakGrass=1..,RE_blockDropRand=58..68},tag=!RE_shears]
 execute as @s[scores={RE_breakGrass=1..},tag=RE_shears] run give @s grass 1
 execute as @s[scores={RE_breakGrass=1..}] run scoreboard players reset @s RE_breakGrass
 # Grass_block  
-execute as @s[scores={RE_breakGrassBlk=1..,RE_blockDropRand=0..10}] run give @s minecraft:flint 1
+execute as @s[scores={RE_breakGrassBlk=1..,RE_blockDropRand=0..50}] run give @s minecraft:flint 1
 execute as @s[scores={RE_breakGrassBlk=1..},tag=RE_shovel] run give @s minecraft:dirt 1
 execute as @s[scores={RE_breakGrassBlk=1..}] run function items:durability/flint_trowel
 execute as @s[scores={RE_breakGrassBlk=1..}] run scoreboard players reset @s RE_breakGrassBlk
@@ -16,7 +16,7 @@ execute as @s[scores={RE_breakClay=1..,RE_blockDropRand=0..50},tag=RE_shovel] ru
 execute as @s[scores={RE_breakClay=1..,RE_blockDropRand=51..100},tag=RE_shovel] run give @s minecraft:clay_ball 3
 execute as @s[scores={RE_breakClay=1..}] run scoreboard players reset @s RE_breakClay
 # Dirt
-execute as @s[scores={RE_breakDirt=1..,RE_blockDropRand=0..10}] run give @s minecraft:flint 1
+execute as @s[scores={RE_breakDirt=1..,RE_blockDropRand=0..50}] run give @s minecraft:flint 1
 execute as @s[scores={RE_breakDirt=1..,RE_blockDropRand=11..},tag=RE_shovel] run give @s minecraft:dirt 1
 execute as @s[scores={RE_breakDirt=1..}] run function items:durability/flint_trowel 
 execute as @s[scores={RE_breakDirt=1..}] run scoreboard players reset @s RE_breakDirt
